@@ -1,6 +1,9 @@
 # Use React Native prebuilt image (Latest Version)
 FROM reactnativecommunity/react-native-android:latest
 
+# Increase memory for Gradle
+ENV GRADLE_OPTS="-Xmx4096m"
+
 # Set working directory
 WORKDIR /app
 
